@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import searchReducer from './searchReducer';
+import search from './searchReducer';
 import currentSelections from './currentSelectionsReducer';
 
 export default combineReducers({
-  searchReducer,
+  search,
   currentSelections
 });

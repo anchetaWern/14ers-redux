@@ -8,8 +8,8 @@ const mapStateToProps = (state) => {
   return {
     mountains: getVisibleMountains(
       mountains,
-      state.searchReducer.query,
-      state.searchReducer.filters
+      state.search.query,
+      state.search.filters
     )
   }
 }
