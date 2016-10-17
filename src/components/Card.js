@@ -29,8 +29,8 @@ export default class Card extends Component {
     return (
       <div
         className="card-container"
-        onMouseOver={this.showInfoWindow.bind(this, properties, coordinates)}
-        onMouseOut={this.hideInfoWindow.bind(this)}>
+        onMouseEnter={this.showInfoWindow.bind(this, properties, coordinates)}
+        onMouseLeave={this.hideInfoWindow.bind(this)}>
         <div className="card">
           <div className="photo-container">
             <img src={photo} alt={properties.name} className="photo" />
